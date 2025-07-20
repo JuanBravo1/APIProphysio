@@ -5,10 +5,10 @@ import numpy as np
 app = Flask(__name__)
 
 
-modelo_tipo = joblib.load('modelo_tipo_terapia.joblib')
-modelo_sesiones = joblib.load('Sesiones_red_neuronal.joblib')
-modelo_semanas = joblib.load('Semanas_red_neuronal.joblib')
-modelo_costos = joblib.load('Costos_red_neuronal.joblib')
+modelo_tipo = joblib.load('modelo_tipo_terapia.pkl')
+modelo_sesiones = joblib.load('Sesiones_red_neuronal.pkl')
+modelo_semanas = joblib.load('Semanas_red_neuronal.pkl')
+modelo_costos = joblib.load('Costos_red_neuronal.pkl')
 
 @app.route('/predecir', methods=['POST'])
 def predecir():
