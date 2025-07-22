@@ -6,7 +6,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Permitir solo localhost:3000
-CORS(app, resources={r"/*": {"origins": "https://forestgreen-lyrebird-741664.hostingersite.com/admin/adminEstadisticas"}})
+CORS(app, resources={r"/*": {"origins": "https://forestgreen-lyrebird-741664.hostingersite.com"}})
 
 modelo_tipo = joblib.load('modelo_tipo_terapia.pkl')
 modelo_sesiones = joblib.load('Sesiones_red_neuronal.pkl')
